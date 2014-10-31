@@ -105,7 +105,7 @@ class AntSimWindow(wx.Window):
     self.Death()
 
   def Run(self):
-    """Move ants to the next generation if the sinulation isn't over."""
+    """Move ants to the next generation if the simulation isn't over."""
     gsp = configuration['go_straight_probability']
     fphdf = configuration['food_pheromone_decreasing_factor']
     cphdf = configuration['colony_pheromone_decreasing_factor']
@@ -121,7 +121,7 @@ class AntSimWindow(wx.Window):
       self.GetParent().Destroy()
     else:
       self.steps += 1
-      self.Refresh(False)
+      self.Refresh()
       if not self.GetParent().paused:
         wx.CallLater(configuration['step_delay_ms'], self.Run)
 
@@ -171,7 +171,8 @@ class AntSimFrame(wx.Frame):
   def InitToolBar(self):
     """Create and initialized the statusbar."""
     self.toolbar = self.CreateToolBar()
-    img = wx.Image(os.path.abspath('../img/play.png'), wx.BITMAP_TYPE_ANY)
+    fn = os.path.join(os.path.dirname(__file__), '../img/play.png')
+    img = wx.Image(fn, wx.BITMAP_TYPE_ANY)
     img = img.Scale(40, 40, wx.IMAGE_QUALITY_HIGH).ConvertToBitmap()
     item = self.toolbar.AddSimpleTool(self.RUN_ID, img, 'Run')
     self.Bind(wx.EVT_MENU, self.Run, item)
@@ -182,12 +183,14 @@ class AntSimFrame(wx.Frame):
     if self.paused:
       self.paused = False
       self.window.StartSimulation()
-      img = wx.Image(os.path.abspath('../img/pause.png'), wx.BITMAP_TYPE_ANY)
+      fn = os.path.join(os.path.dirname(__file__), '../img/pause.png')
+      img = wx.Image(fn, wx.BITMAP_TYPE_ANY)
       img = img.Scale(40, 40, wx.IMAGE_QUALITY_HIGH).ConvertToBitmap()
       self.toolbar.SetToolNormalBitmap(id=self.RUN_ID, bitmap=img)
     else:
       self.paused = True
-      img = wx.Image(os.path.abspath('../img/play.png'), wx.BITMAP_TYPE_ANY)
+      fn = os.path.join(os.path.dirname(__file__), '../img/play.png')
+      img = wx.Image(fn, wx.BITMAP_TYPE_ANY)
       img = img.Scale(40, 40, wx.IMAGE_QUALITY_HIGH).ConvertToBitmap()
       self.toolbar.SetToolNormalBitmap(id=self.RUN_ID, bitmap=img)
 
