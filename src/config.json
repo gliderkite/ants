@@ -1,0 +1,34 @@
+{
+  "ant_color": "Green", 
+  "ant_foraging_color": "Purple", 
+  "ant_size": 5, 
+  "birth_delay_ms": 500, 
+  "colony_pheromone_color": "Red", 
+  "colony_pheromone_decreasing_factor": 0.005, 
+  "death_delay_ms": 500, 
+  "draw_colony_pheromone_lifespan": true, 
+  "draw_food_pheromone_lifespan": false, 
+  "food_color": "Yellow", 
+  "food_pheromone_color": "Yellow", 
+  "food_pheromone_decreasing_factor": 0.01, 
+  "food_places_number": 30, 
+  "food_quantity": 25, 
+  "food_quantity_per_ant": 5, 
+  "go_straight_probability": 0.9, 
+  "initial_food_quantity": 50, 
+  "life_expectancy_steps": 1000, 
+  "max_ants_number": 200, 
+  "nest_color": "Black", 
+  "nest_location": [
+    30, 
+    20
+  ], 
+  "nest_size": 10, 
+  "pheromone_scale_decreasing_factor": 10, 
+  "step_delay_ms": 100, 
+  "world_size": [
+    50, 
+    40
+  ], 
+  "zoom": 11
+}

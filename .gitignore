@@ -1,0 +1,11 @@
+## OS X proprietary formats
+*.DS_Store
+
+# Python specific
+*.pyc
+
+# PyCharm specifid
+*.idea
+
+# Directories
+__pycache__/
