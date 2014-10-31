@@ -44,4 +44,5 @@ def default():
   config['nest_color'] = 'Black'
   config['ant_color'] = 'Green'
   config['ant_foraging_color'] = 'Purple'
+  config['background_color'] = 'White'
   return 'config.json', config

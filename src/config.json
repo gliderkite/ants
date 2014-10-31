@@ -2,6 +2,7 @@
   "ant_color": "Green", 
   "ant_foraging_color": "Purple", 
   "ant_size": 5, 
+  "background_color": "White", 
   "birth_delay_ms": 500, 
   "colony_pheromone_color": "Red", 
   "colony_pheromone_decreasing_factor": 0.005, 

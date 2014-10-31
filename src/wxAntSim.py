@@ -24,7 +24,7 @@ class AntSimWindow(wx.Window):
     """Initializes the window."""
     wx.Window.__init__(self, parent, -1)
     # init properties
-    self.SetBackgroundColour('White')
+    self.SetBackgroundColour(configuration['background_color'])
     self.update = update_info
     self.steps = 0
     # Window event binding
