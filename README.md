@@ -8,10 +8,10 @@ ants is a [zero-player game](http://en.wikipedia.org/wiki/Zero-player_game), so 
 
 However it is possible to configure the simulator by editing the program configuration file (config.json). In particular you can change:
 
-1. The colors of ants (foraging or looking for food), nest, food, pheromones and for the background.
+1. The colors of ants (foraging or looking for food), nest, food, pheromones and the background.
 2. The world's size (and zoom factor), the ants size, the nest size and location.
 3. The time between one birth/death and the next one.
-4. Pheromone evaporation speed.
+4. The pheromone evaporation speed.
 5. Which type of pheromone will be drawn.
 6. Initial food quantity and the number of different locations.
 7. The behavior of a random ant movment.
