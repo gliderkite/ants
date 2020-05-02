@@ -4,7 +4,7 @@ An [ant colony](http://en.wikipedia.org/wiki/Ant_colony) simulator written in Py
 ## How To Play
 ants is a [zero-player game](http://en.wikipedia.org/wiki/Zero-player_game), so you can simply start the simulation and enjoy it!
 
-![ants image](http://i58.tinypic.com/b55nqd.jpg)
+![ants preview](./img/ants.gif)
 
 However it is possible to configure the simulator by editing the program configuration file (config.json). In particular you can change:
 

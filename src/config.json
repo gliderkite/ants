@@ -28,8 +28,8 @@
   "pheromone_scale_decreasing_factor": 10, 
   "step_delay_ms": 100, 
   "world_size": [
-    50, 
-    40
+    100, 
+    70
   ], 
   "zoom": 11
 }
